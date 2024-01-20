@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewContactFragment"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/single_contact_style"
+        >
+
+
+        <EditText
+            android:id="@+id/user_contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:hint="Enter Contact Name"
+            android:textSize="20sp"
+            />
+
+
+        <EditText
+            android:id="@+id/contact_user_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="phone"
+            android:textSize="20sp"
+            android:hint="Enter Contact"
+            android:layout_below="@+id/user_contact_name"
+            />
+
+        <Button
+            android:id="@+id/add_contact_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/contact_user_number"
+            android:backgroundTint="@color/green"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
